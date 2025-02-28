@@ -398,12 +398,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 \*------------------------------------*/
 .hero-area {
 	position:relative;
-	padding-top: 40px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 }
 
 #home.hero-area {
-	height:calc(70vh - 80px);
+	height:calc(80vh - 80px);
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
