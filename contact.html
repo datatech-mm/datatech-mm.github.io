@@ -112,11 +112,28 @@
 							    <input type="hidden" name="redirectTo" value="https://www.datatech-mm.com/contact.html">
 							    <button class="main-button icon-button pull-right" type="submit">Send Message</button>
 							</form>
-
+							        <!-- Success message container -->
+							        <div id="successMessage" style="display:none; color: green; text-align: center; padding: 10px; background-color: #f0f0f0; margin-top: 20px;">
+							            Successfully sent your message. Thank you!
+							        </div>
 						</div>
 					</div>
 					<!-- /contact form -->
 
+						<script>
+						function showSuccessMessage(event) {
+						    event.preventDefault(); // Prevent the form from submitting immediately
+						    
+						    // Display success message
+						    document.getElementById('successMessage').style.display = 'block';
+						    
+						    // Set a timeout to allow the success message to be visible before redirecting
+						    setTimeout(function() {
+						        // Allow StaticForms to handle the redirect
+						        document.getElementById('contactForm').submit();
+						    }, 2000); // Show message for 2 seconds before submission
+						}
+						</script>
 					<!-- contact information -->
 					<div class="col-md-5 col-md-offset-1">
 						<h4>Contact Information</h4>
