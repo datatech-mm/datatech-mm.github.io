@@ -29,16 +29,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 header {
-    text-align: center;
-    background-color: #f8f9fa; /* Light background for header */
-    padding: 10px 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .banner {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 body {
 	line-height: 1;
